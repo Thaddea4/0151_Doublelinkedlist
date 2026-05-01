@@ -36,3 +36,9 @@ public:
         // Step 3: Insert at beginning if list empty or nim smallest
         if (START == NULL || nim <= START->noMhs)
         {
+        
+        if (START != NULL && nim == START->noMhs)
+            {
+                cout << "\nDuplicate roll numbers not allowed" << endl;
+                return;
+            }
