@@ -45,3 +45,15 @@ public:
 
         // Step 4: newNode.next = START
             newnode->next = START;
+
+         // Step 5: START.prev = newNode (if START exists)
+            if (START != NULL)
+                START->prev = newnode;
+
+            // Step 6: newNode.prev = NULL
+            newnode->prev = NULL;
+
+            // Step 7: START = newNode
+            START = newnode;
+            return;
+        }
