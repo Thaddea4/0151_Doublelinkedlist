@@ -32,3 +32,7 @@ public:
 
         // Step 2: Assign values to data fields
         newnode->noMhs = nim;
+
+        // Step 3: Insert at beginning if list empty or nim smallest
+        if (START == NULL || nim <= START->noMhs)
+        {
